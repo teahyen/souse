@@ -1,0 +1,5 @@
+﻿  Love_Letter.cpp
+C:\Users\ROG\source\repos\I_Love_You\I_Love_You\Love_Letter.cpp(6,1): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+C:\Users\ROG\source\repos\I_Love_You\I_Love_You\Love_Letter.cpp(11,16): warning C4305: '초기화 중': 'int'에서 'char'(으)로 잘립니다.
+C:\Users\ROG\source\repos\I_Love_You\I_Love_You\Love_Letter.cpp(11,11): warning C4309: '초기화 중': 상수 값이 잘립니다.
+  I_Love_You.vcxproj -> C:\Users\ROG\source\repos\I_Love_You\Debug\I_Love_You.exe

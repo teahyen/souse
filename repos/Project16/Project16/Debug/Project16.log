@@ -1,0 +1,4 @@
+﻿  Main.cpp
+C:\Users\ROG\source\repos\Project16\Project16\Main.cpp(8,1): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+C:\Users\ROG\source\repos\Project16\Project16\Main.cpp(11,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\ROG\source\repos\Project16\Project16\Main.cpp(19,2): error C3892: 'citer': const인 변수에 할당할 수 없습니다.

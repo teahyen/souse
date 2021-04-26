@@ -1,0 +1,13 @@
+C:\Users\ROG\source\repos\FastWorld\FastWorld\bin\Debug\netcoreapp3.1\FastWorld.exe
+C:\Users\ROG\source\repos\FastWorld\FastWorld\bin\Debug\netcoreapp3.1\FastWorld.deps.json
+C:\Users\ROG\source\repos\FastWorld\FastWorld\bin\Debug\netcoreapp3.1\FastWorld.runtimeconfig.json
+C:\Users\ROG\source\repos\FastWorld\FastWorld\bin\Debug\netcoreapp3.1\FastWorld.runtimeconfig.dev.json
+C:\Users\ROG\source\repos\FastWorld\FastWorld\bin\Debug\netcoreapp3.1\FastWorld.dll
+C:\Users\ROG\source\repos\FastWorld\FastWorld\bin\Debug\netcoreapp3.1\FastWorld.pdb
+C:\Users\ROG\source\repos\FastWorld\FastWorld\obj\Debug\netcoreapp3.1\FastWorld.csprojAssemblyReference.cache
+C:\Users\ROG\source\repos\FastWorld\FastWorld\obj\Debug\netcoreapp3.1\FastWorld.AssemblyInfoInputs.cache
+C:\Users\ROG\source\repos\FastWorld\FastWorld\obj\Debug\netcoreapp3.1\FastWorld.AssemblyInfo.cs
+C:\Users\ROG\source\repos\FastWorld\FastWorld\obj\Debug\netcoreapp3.1\FastWorld.csproj.CoreCompileInputs.cache
+C:\Users\ROG\source\repos\FastWorld\FastWorld\obj\Debug\netcoreapp3.1\FastWorld.dll
+C:\Users\ROG\source\repos\FastWorld\FastWorld\obj\Debug\netcoreapp3.1\FastWorld.pdb
+C:\Users\ROG\source\repos\FastWorld\FastWorld\obj\Debug\netcoreapp3.1\FastWorld.genruntimeconfig.cache

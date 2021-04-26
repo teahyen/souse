@@ -1,0 +1,3 @@
+﻿  Project.cpp
+C:\Users\ROG\source\repos\Project23\Project23\Project.cpp(6,1): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+  Project23.vcxproj -> C:\Users\ROG\source\repos\Project23\Debug\Project23.exe

@@ -1,0 +1,12 @@
+﻿  Main.cpp
+C:\Users\ROG\source\repos\10209김태현\10209김태현\Main.cpp(22,2): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\ROG\source\repos\10209김태현\10209김태현\Main.cpp(25,2): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\ROG\source\repos\10209김태현\10209김태현\Main.cpp(28,2): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\ROG\source\repos\10209김태현\10209김태현\Main.cpp(31,2): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\ROG\source\repos\10209김태현\10209김태현\Main.cpp(37,2): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\ROG\source\repos\10209김태현\10209김태현\Main.cpp(40,2): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\ROG\source\repos\10209김태현\10209김태현\Main.cpp(43,2): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\ROG\source\repos\10209김태현\10209김태현\Main.cpp(46,2): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\ROG\source\repos\10209김태현\10209김태현\Main.cpp(67,65): error C2664: 'CNameCard::CNameCard(const CNameCard &)': 인수 1을(를) 'const char [7]'에서 'char *'(으)로 변환할 수 없습니다.
+C:\Users\ROG\source\repos\10209김태현\10209김태현\Main.cpp(67,16): message : 문자열 리터럴로부터의 변환은 const 한정자가 손실됩니다(/Zc:strictStrings 참조).
+C:\Users\ROG\source\repos\10209김태현\10209김태현\Main.cpp(19,12): message : 'CNameCard::CNameCard' 선언을 참조하십시오.

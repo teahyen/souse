@@ -1,0 +1,5 @@
+﻿  Main.cpp
+D:\01.source\Project1\Project1\Main.cpp(19,6): error C2561: 'num': 함수는 값을 반환해야 합니다.
+D:\01.source\Project1\Project1\Main.cpp(4): message : 'num' 선언을 참조하십시오.
+D:\01.source\Project1\Project1\Main.cpp(28,5): error C2561: 'num': 함수는 값을 반환해야 합니다.
+D:\01.source\Project1\Project1\Main.cpp(4): message : 'num' 선언을 참조하십시오.

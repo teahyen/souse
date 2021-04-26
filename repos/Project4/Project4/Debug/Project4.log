@@ -1,0 +1,12 @@
+﻿  main.cpp
+C:\Users\ROG\source\repos\Project4\Project4\main.cpp(14,1): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+C:\Users\ROG\source\repos\Project4\Project4\main.cpp(16,27): error C2440: '초기화 중': 'const char [3]'에서 'char'(으)로 변환할 수 없습니다.
+C:\Users\ROG\source\repos\Project4\Project4\main.cpp(16,27): message : 이 변환이 가능한 컨텍스트가 없습니다.
+C:\Users\ROG\source\repos\Project4\Project4\main.cpp(17,27): error C2440: '초기화 중': 'const char [3]'에서 'int'(으)로 변환할 수 없습니다.
+C:\Users\ROG\source\repos\Project4\Project4\main.cpp(17,27): message : 이 변환이 가능한 컨텍스트가 없습니다.
+C:\Users\ROG\source\repos\Project4\Project4\main.cpp(18,27): error C2440: '초기화 중': 'const char [3]'에서 'char'(으)로 변환할 수 없습니다.
+C:\Users\ROG\source\repos\Project4\Project4\main.cpp(18,27): message : 이 변환이 가능한 컨텍스트가 없습니다.
+C:\Users\ROG\source\repos\Project4\Project4\main.cpp(19,27): error C2440: '초기화 중': 'const char [3]'에서 'char'(으)로 변환할 수 없습니다.
+C:\Users\ROG\source\repos\Project4\Project4\main.cpp(19,27): message : 이 변환이 가능한 컨텍스트가 없습니다.
+C:\Users\ROG\source\repos\Project4\Project4\main.cpp(20,27): error C2440: '초기화 중': 'const char [3]'에서 'char'(으)로 변환할 수 없습니다.
+C:\Users\ROG\source\repos\Project4\Project4\main.cpp(20,27): message : 이 변환이 가능한 컨텍스트가 없습니다.
