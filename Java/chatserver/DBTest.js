@@ -27,15 +27,27 @@ io.on("connection", socket =>{
     console.log(`유저 연결 : ${socket.id}`);
 
     socket.on("savescore", async data => {
-        let {name, score} = data;
+        let {name, score, msg} = data;
         let con = await connPool.getConnection();
         const sql = `INSERT INTO score_list(name, score, msg) VALUES (?, ?, ?)`;
-        let result = await con.query(sql, [name, score, ""]);
+        let result = await con.query(sql, [name, score, msg]);
         if(result[0].affectedRows == 1) {
             socket.emit("msg", {msg:"기록 완료되었습니다."});
         }
+        sql = `SELECT *FROM score_list ORDER BY score DESC LIMIT 0,5`;
+        result = await con.query(sql);
+        socket.emit("refreshscore",result[0]);
+        //추가 끝
     });
-
+    //메세지 ? TOP10
+    socket.on("refreshscore", async data => {
+        let con = await connPool.getConnection();
+        const sql = `SELECT * FROM score_list ORDER BY score DESC LIMIT 0, 5`;
+        let result = await con.query(sql);
+        
+        socket.emit("refreshscore", result[0]);
+    });
+    
     socket.on("register", async data => {
         //register라는 메시지로 data가 넘어온다.
         let {name, email, pass} = data;
@@ -51,16 +63,6 @@ io.on("connection", socket =>{
             socket.emit("msg", {msg:"회원가입 중 오류 발생"});
         }
     });
-    socket.on("refreshscore",async data =>{
-        let con = await connPool.getConnection();
-        const sql = `SELECT *FROM score_list ORDER BY score DESC LIMIT 0,5`;
-        let reset = await con.query(sql);
-
-        socket.emit("refreshscore",result[0]);
-    });
-    //TOP5리스트를 저장할 배열
-    this.socketData = [];
-    this.socketData
 });
 
 server.listen(15454, ()=>{
