@@ -22,8 +22,8 @@ export class Block {
         //사각형그리는 애, x,y랑 width, height 
         ctx.strokeStyle = 'rgba(0,0,0, 0.5)';
         ctx.strokeRect(
-            this.x * this.size+this+padding, 
-            this.y * this.size, 
+            this.x * this.size+this.padding, 
+            this.y * this.size+this.padding, 
             this.size+1, this.size+1);
 
             if(this.fill){

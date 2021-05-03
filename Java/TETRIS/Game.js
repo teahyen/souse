@@ -36,12 +36,13 @@ export class Game {
             }
             this.arr.push(row);
         }
+        this.debug();
     }
-    debug(){
-        this.arr[19][0].setBlockData(true,"007bff");
-        this.arr[19][1].setBlockData(true,"007bff");
-        this.arr[19][2].setBlockData(true,"007bff");
-        this.arr[19][3].setBlockData(true,"007bff");
 
+    debug(){
+        this.arr[19][0].setBlockData(true, "#007bff");
+        this.arr[19][1].setBlockData(true, "#007bff");
+        this.arr[19][2].setBlockData(true, "#007bff");
+        this.arr[19][3].setBlockData(true, "#007bff");
     }
 }
