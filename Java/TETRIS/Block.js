@@ -28,7 +28,14 @@ export class Block {
 
             if(this.fill){
                 ctx.fillStyle = this.color;
-                ctx.fillRect();
+                ctx.fillRect(
+            this.x * this.size, 
+            this.y * this.size, 
+            this.size, this.size);
             }
+    }
+    copyBlockData(other){
+        this.fill = other.fill;
+        this.color = other.color;
     }
 }

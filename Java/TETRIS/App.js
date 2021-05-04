@@ -6,6 +6,7 @@ class App {
         this.init();
         this.debug(); //테스트용 코드
         this.game = new Game();
+        Game.instance = this.game;
     }
 
     init(){
@@ -16,10 +17,14 @@ class App {
         document.querySelector("#btnStart").addEventListener("click", ()=>{
             this.game.start();
         });
+        document.querySelector("#btnStart")
     }
 
     debug(){
-        document.querySelector("#btnLogin").click();
+        document.querySelector("#btnLogin").addEventListener("click", ()=>{
+            e.preventDefault();
+            return false;
+        });
     }
 }
 
