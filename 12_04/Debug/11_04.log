@@ -1,0 +1,11 @@
+﻿빌드 시작: 2012-11-25 오후 10:40:25
+     1>2 노드의 "C:\Work\CookBook\11_04\11_04.vcxproj" 프로젝트(Build 대상)입니다.
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt 11_4.cpp
+         11_4.cpp
+     1>c:\work\cookbook\11_04\11_4.cpp(37): error C2660: 'Add::Add' : 함수는 2개의 매개 변수를 사용하지 않습니다.
+     1>"C:\Work\CookBook\11_04\11_04.vcxproj" 프로젝트를 빌드했습니다(Build 대상). - 실패
+
+빌드하지 못했습니다.
+
+경과 시간: 00:00:00.63

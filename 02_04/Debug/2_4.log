@@ -1,0 +1,11 @@
+﻿빌드 시작: 2013-05-13 17:21:51
+     1>2 노드의 "C:\work\CookBook\02_04\2_4.vcxproj" 프로젝트(Rebuild 대상)입니다.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D CODE_ANALYSIS /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze /analyze:log "Debug\02_04.cpp.nativecodeanalysis.xml" /errorReport:prompt   /analyze:quiet 02_04.cpp
+         02_04.cpp
+     1>c:\work\cookbook\02_04\02_04.cpp(5): warning C4309: '초기화 중' : 상수 값이 잘립니다.
+     1>"C:\work\CookBook\02_04\2_4.vcxproj" 프로젝트를 빌드했습니다(Rebuild 대상). - 실패
+
+빌드하지 못했습니다.
+
+경과 시간: 00:00:04.88

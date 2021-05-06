@@ -1,0 +1,12 @@
+﻿빌드 시작: 2012-11-25 오후 10:57:37
+     1>2 노드의 "C:\Work\CookBook\11_10\11_10.vcxproj" 프로젝트(Build 대상)입니다.
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt 11_10.cpp
+         11_10.cpp
+     1>c:\work\cookbook\11_10\11_10.cpp(66): error C2440: '=' : 'Calc *'에서 'Add *'(으)로 변환할 수 없습니다.
+                 기본 형식에서 파생 형식으로 캐스팅하려면 dynamic_cast 또는 static_cast가 필요합니다.
+     1>"C:\Work\CookBook\11_10\11_10.vcxproj" 프로젝트를 빌드했습니다(Build 대상). - 실패
+
+빌드하지 못했습니다.
+
+경과 시간: 00:00:00.65

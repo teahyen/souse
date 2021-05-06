@@ -1,0 +1,16 @@
+﻿빌드 시작: 2012-11-25 오후 8:44:45
+     1>2 노드의 "C:\Work\CookBook\10-31\10-31.vcxproj" 프로젝트(Build 대상)입니다.
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt 10_31.cpp
+         10_31.cpp
+     1>c:\work\cookbook\10-31\10_31.cpp(27): error C2248: 'Complex::real' : private 멤버('Complex' 클래스에서 선언)에 액세스할 수 없습니다.
+                 c:\work\cookbook\10-31\10_31.cpp(6) : 'Complex::real' 선언을 참조하십시오.
+                 c:\work\cookbook\10-31\10_31.cpp(4) : 'Complex' 선언을 참조하십시오.
+     1>c:\work\cookbook\10-31\10_31.cpp(27): error C2248: 'Complex::image' : private 멤버('Complex' 클래스에서 선언)에 액세스할 수 없습니다.
+                 c:\work\cookbook\10-31\10_31.cpp(7) : 'Complex::image' 선언을 참조하십시오.
+                 c:\work\cookbook\10-31\10_31.cpp(4) : 'Complex' 선언을 참조하십시오.
+     1>"C:\Work\CookBook\10-31\10-31.vcxproj" 프로젝트를 빌드했습니다(Build 대상). - 실패
+
+빌드하지 못했습니다.
+
+경과 시간: 00:00:00.62

@@ -1,0 +1,15 @@
+﻿빌드 시작: 2012-11-25 오후 8:37:39
+     1>2 노드의 "C:\Work\CookBook\10_25\10_25.vcxproj" 프로젝트(Build 대상)입니다.
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt 10_25.cpp
+         10_25.cpp
+     1>c:\work\cookbook\10_25\10_25.cpp(31): warning C4832: '.' 토큰을 UDT 'StaticTest' 뒤에 사용할 수 없습니다.
+                 c:\work\cookbook\10_25\10_25.cpp(4) : 'StaticTest' 선언을 참조하십시오.
+     1>c:\work\cookbook\10_25\10_25.cpp(31): error C2275: 'StaticTest' : 이 형식을 식으로 잘못 사용했습니다.
+                 c:\work\cookbook\10_25\10_25.cpp(4) : 'StaticTest' 선언을 참조하십시오.
+     1>c:\work\cookbook\10_25\10_25.cpp(31): error C2228: '.a' 왼쪽에는 클래스/구조체/공용 구조체가 있어야 합니다.
+     1>"C:\Work\CookBook\10_25\10_25.vcxproj" 프로젝트를 빌드했습니다(Build 대상). - 실패
+
+빌드하지 못했습니다.
+
+경과 시간: 00:00:00.70
