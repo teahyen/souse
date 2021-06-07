@@ -1,10 +1,11 @@
 export class Block {
-    constructor(x, y)
+    constructor(x, y, size = 35)
     {
         this.x = x;
         this.y = y;
-        this.size = 35;
-        this.padding = 2
+        this.size = size;
+        this.padding = 2;
+        
         this.fill = false;
         this.color = '#FF0000';
     }

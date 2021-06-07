@@ -1,5 +1,6 @@
 //김경혁, 김민준, 서동연, 한우.
 import {Game} from '/Game.js';
+import {NextBlock} from '/NextBlock.js';
 // typescript
 
 export class Player{
@@ -25,13 +26,13 @@ export class Player{
                 [{x:-2, y:0}, {x:-1, y:0}, {x:0, y:0}, {x:0, y:1}]
             ], // 역ㄴ
             [
-                [{x:-1, y:1}, {x:0, y:1}, {x:0, y:0}, {x:1, y:0}],
-                [{x:0, y:-1}, {x:0, y:0}, {x:1, y:0}, {x:1, y:1}],
-            ], // _┌━ 모양
+                [{x:-1, y:0}, {x:0, y:-1}, {x:0, y:0}, {x:-1, y:1}],
+                [{x:-1, y:0}, {x:0, y:0}, {x:0, y:1}, {x:1, y:1}],
+            ], // ─┐_ 모양
             [
                 [{x:0, y:-1}, {x:0, y:0}, {x:1, y:0}, {x:1, y:1}],
                 [{x:-1, y:0}, {x:0, y:0}, {x:0, y:-1}, {x:1, y:-1}],
-            ], // ─┐_ 모양
+            ], // _┌━ 모양
             [
                 [{x:-1, y:0}, {x:0, y:0}, {x:0, y:-1}, {x:1, y:0}],
                 [{x:0, y:-1}, {x:0, y:0}, {x:0, y:1}, {x:1, y:0}],
@@ -64,7 +65,14 @@ export class Player{
         this.initPosition(); //위치 초기화
         this.setBlockData(true, this.colorSet[this.currentBlock]);
 
+        this.nextBlockCanvas = new NextBlock();
+        this.nextBlockCanvas.setNextBlock(
+            this.blockSet[this.nextBlock][0],
+            this.colorSet[this.nextBlock]);
+    }
 
+    render(ctx){
+        this.nextBlockCanvas.render();
     }
 
     initPosition(){
@@ -81,7 +89,18 @@ export class Player{
         let nextIdx = (this.idx + 1) % this.blockSeq.length;
         this.currentBlock = this.blockSeq[this.idx];
         this.nextBlock = this.blockSeq[nextIdx];
+        
+        //다음블럭 캔버스에 그리기
+        this.nextBlockCanvas.setNextBlock(
+            this.blockSet[this.nextBlock][0],
+            this.colorSet[this.nextBlock]);
         this.initPosition();
+
+        this.initPosition;
+
+        if(!this.checkPossible()){
+            Game.instance.setGameOver();
+        }
     }
 
     moveLeft(){
@@ -108,8 +127,21 @@ export class Player{
         this.currentRot = (this.currentRot + 1) % this.blockSet[this.currentBlock].length;
         if(!this.checkPossible()){
             this.currentRot = temp;
+            if(this.x == 0){
+                this.x++;
+                if(!this.checkPossible()){
+                    this.x--;
+                }
+            }
+        }else if(this.x == 9) {
+            this.x--;
+            if(!this.checkPossible()){
+                this.x++;
+            }
         }
-        this.setBlockData(true, this.colorSet[this.currentBlock]);
+            
+        
+        this.currentRot = temp;
     }
     
     //성공적으로 내려갔다면 true리턴, 그렇지않다면 false

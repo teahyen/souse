@@ -14,11 +14,24 @@ export class Game {
 
         this.time = 2000; //2초마다 한번씩
         this.currentTime = 0;
+        this.score = 0;
+        this.scoreBox = document.querySelector(".score-box");
+
+        this.gameOverPanel = document.querySelector("#gameOverBox");
+        this.gameOver = false;
+    }
+
+    setGameOver(){
+        clearInterval(this.frame);
+        this.gameOverPanel.classList.add("on");
+        this.render();
+        this.gameOver = true;
+
     }
 
     addKeyEvent() {
         document.addEventListener("keydown", e => {
-            if (this.player == null) return;
+            if (this.player == null||this.gameOver) return;
 
             if (e.keyCode == 37) {
                 this.player.moveLeft();  //왼쪽
@@ -30,6 +43,8 @@ export class Game {
                 this.player.moveDown();
             } else if (e.keyCode == 32) {
                 this.player.straightDown();
+            } else if(e.keyCode == 90){
+                this.player.swapBlock();
             }
         });
     }
@@ -52,6 +67,10 @@ export class Game {
         this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
 
         this.arr.forEach(row => row.forEach(item => item.render(this.ctx)));
+
+        this.scoreBox.innerHTML = `${this.score} 점`;
+    
+        this.player.render(this.ctx);
     }
 
     start() {
@@ -69,6 +88,7 @@ export class Game {
             for (let j = 0; j < 10; j++) {
                 row.push(new Block(j, i));
             }
+        this.gameOverPanel.classList.remove("on");
             this.arr.push(row);
         }
 
@@ -90,9 +110,17 @@ export class Game {
 
             if(full){
                 this.lineRemove(i); //i 윗줄을 전부 한칸씩 내려
+                this.AddScore();
                 i++;
             }
 
+        }
+    }
+    AddScore(){
+        this.score++;
+        if(this.score %5 == 0 &&this.time > 100){
+            this.time -= 300;
+            if(this.time < 100) this.time = 100;
         }
     }
 

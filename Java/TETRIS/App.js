@@ -17,14 +17,14 @@ class App {
         document.querySelector("#btnStart").addEventListener("click", ()=>{
             this.game.start();
         });
-        document.querySelector("#btnStart")
-    }
-
-    debug(){
-        document.querySelector("#btnLogin").addEventListener("click", ()=>{
+        document.querySelector("#btnStart").addEventListener("keydown", e => {
             e.preventDefault();
             return false;
         });
+    }
+
+    debug(){
+        document.querySelector("#btnLogin").click();
     }
 }
 
